@@ -9,7 +9,7 @@ export async function sendEmail(to: string, code: number | string) {
     case "elastice":
       return elasticeEmail(to, code);
     case "mailgun":
-      return mailgunEmail([to], "", code.toString());
+      return mailgunEmail([to], "user", code.toString());
     case "smtpjs":
       return smtpjsEmail(to, code);
     default:
