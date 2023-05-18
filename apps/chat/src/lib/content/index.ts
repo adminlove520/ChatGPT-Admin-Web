@@ -2,7 +2,6 @@ import {tencentTextSecurity} from "@/lib/content/tencent";
 import {baiduTextSecurity} from "@/lib/content/baidu";
 
 const service = process.env.TEXT_SECURITY;
-console.log(service);
 
 export async function textSecurity(conversation: any) {
   /* If the secure text service is not set up.*/
