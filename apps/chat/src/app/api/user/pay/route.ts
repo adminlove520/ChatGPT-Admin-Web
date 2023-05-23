@@ -6,6 +6,7 @@ import { OrderLogic, PlanDAL } from "database";
 export async function GET(req: NextRequest) {
   // const email = req.headers.get("email")!; // pass from middleware
   const email = useUserStore((state) => state.email);
+  console.log(email);
 
   const { searchParams } = new URL(req.url);
   const plan = searchParams.get("plan")?.toLowerCase();
