@@ -140,7 +140,7 @@ export function Sidebar({ children }: { children: React.ReactNode }) {
                 router.push("/pricing");
               }}
             >
-              点我充值
+              请勿充值
             </div>
           </div>
         )}
